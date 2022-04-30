@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw"></span>
+                <button id="copy" class="copy" title="Copy in clipboard">copy</button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="len-parent">
+                <label for="len">تعداد کاراکتر های رمز عبور</label>
+                <input type="number" id="len" min="2" max="15" value="8">
+            </div>
+            <div class="Number-parent">
+                <label for="Number">شامل اعداد</label>
+                <input type="checkbox" id="Number">
+            </div>
+            <div class="upper-parent">
+                <label for="upper">شامل کلمات بزرگ</label>
+                <input type="checkbox" id="upper">
+            </div>
+            <div class="lower-parent">
+                <label for="lower">شامل کلمات کوچک</label>
+                <input type="checkbox" id="lower">
+            </div>
+            <div class="symbol-parent">
+                <label for="symbol">شامل سیمبل</label>
+                <input type="checkbox" id="symbol">
+            </div>
+            <button class="genrator" id="genrator">Genrate</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
